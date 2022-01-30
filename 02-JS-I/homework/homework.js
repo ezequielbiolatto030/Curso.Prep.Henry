@@ -4,19 +4,25 @@
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 0;
+
+const nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+
+  const nuevoBool = true;
+
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === 5;
+
+const nuevaResta = 10 - 5 == 5;
+
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
 
+  const nuevaMultiplicacion = 10 * 4 == 40 ;
+ 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1;
+const nuevoModulo = 21 % 5 == 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,33 +34,38 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return str;
+  let cadena = str;
+  return cadena;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y;
-  
+  var suma =x + y;
+  return suma;  
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x - y;  
+  var resta = 0
+  resta=  x - y;
+  return resta;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x * y;
+  var multiplicacion = x * y;
+  return multiplicacion;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  return (x / y);
+  var divide = x / y;
+  return divide;
 }
 
 function sonIguales(x, y) {
@@ -72,11 +83,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length){
+  if (str1.length === str2.length){
     return true;
   }
   return false;
-
 }
 
 function menosQueNoventa(num) {
@@ -86,8 +96,7 @@ function menosQueNoventa(num) {
   if (num < 90 ){
     return true;
   }
-  return false;
-  
+  return false;  
 }
 
 function mayorQueCincuenta(num) {
@@ -103,7 +112,8 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % 5;
+  var resto = x % y;
+  return resto;
 }
 
 function esPar(num) {
@@ -130,42 +140,43 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.pow(num,2);
-  
+  alCudrado = Math.pow(num,2);
+  return alCudrado;  
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow (num,3);
-  
+  var alCubo = Math.pow (num,3);
+  return alCubo;  
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow (num,exponent);
-  
+var eleva = Math.pow (num,exponent);
+return eleva;  
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num);
-  
+  var redondear = Math.round(num);
+  return redondear;  
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil (num);
-  
+var redondearArriba = Math.ceil (num);
+  return redondearArriba;  
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random();
+  var azar = Math.random();
+  return azar;
 }
 
 function esPositivo(numero) {
@@ -174,12 +185,12 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero >0){
-    console.log("es positivo");
+    return "Es positivo";
   }
-  else if (numero <0){
-    console.log("es negativo");
+  if (numero <0){
+    return "Es negativo";
   }
-  else{
+  if (numero ===0){
     return false;
   }
 }
@@ -242,10 +253,10 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   if (letra=="a" || letra=="e" || letra =="i" || letra =="o" || letra == "u" || letra=="A" || letra =="E" ||letra=="I" || letra =="O" || letra == "U"){
-    console.log("Es vocal");
+    return "Es vocal";
   }
   else {
-    console.log("Dato incorrecto");
+    return "Dato incorrecto";
   }
 } 
 
